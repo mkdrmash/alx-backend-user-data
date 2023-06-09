@@ -41,7 +41,7 @@ def bef_req():
     else:
         setattr(request, "current_user", auth.current_user(request))
         excluded = [
-            # '/api/v1/status/',
+            '/api/v1/status/',
             '/api/v1/unauthorized/',
             '/api/v1/forbidden/',
             '/api/v1/auth_session/login/'
